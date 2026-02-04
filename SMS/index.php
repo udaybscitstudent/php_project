@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
   <body class="h-screen w-full flex place-items-center justify-center font-serif bg-gray-100 text-sm">
     <div class="w-[450px] h-[400px] border border-gray-300 rounded-md bg-white font-bold">
@@ -12,11 +13,17 @@
             <div class="w-[90%] mx-auto">
                 <div class="">
                     <label for="username">Username</label>
-                    <input type="text" name="username" value="<?php echo isset($_COOKIE['username']) ? $_COOKIE['username'] : ''; ?>" placeholder="Enter username" id="username" class="border border-gray-300 rounded w-full py-2 px-3  leading-tight w-full mt-1 outline-gray-500"/>
+                    <div class="flex items-center border relative border-gray-300 rounded w-full leading-tight w-full mt-1 outline-gray-500">
+                        <input type="text" name="username" value="<?php echo isset($_COOKIE['username']) ? $_COOKIE['username'] : ''; ?>" placeholder="Enter username" id="username" class="rounded w-full leading-tight w-full py-2 px-3 outline-gray-500"/>
+                        <i class="bi bi-person-fill absolute right-2 text-lg"></i>
+                    </div>
                 </div>
                 <div class="mt-4">
                     <label for="password">Password</label>
-                    <input type="password" name="password" value="<?php echo isset($_COOKIE['password']) ? $_COOKIE['password'] : ''; ?>" placeholder="Enter password" id="password" class="border border-gray-300 rounded w-full py-2 px-3 leading-tight w-full mt-1 outline-gray-500"  />
+                    <div class="flex items-center border relative rounded w-full leading-tight w-full mt-1 outline-gray-500 border-gray-300">
+                        <input type="password" name="password" value="<?php echo isset($_COOKIE['password']) ? $_COOKIE['password'] : ''; ?>" placeholder="Enter password" id="password" class="rounded w-full py-2 px-3 leading-tight w-full outline-gray-500"  />
+                        <i class="bi bi-lock absolute right-2 text-lg"></i>
+                    </div>
                 </div>
                 <div class="mt-2 relative">
                     <input type="checkbox" name="remember" id="remember">
