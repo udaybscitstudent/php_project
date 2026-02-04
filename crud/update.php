@@ -48,7 +48,7 @@ if(isset($_GET['ROLL'])){
           
           <div class="flex items-center">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded" type="submit" name="update">Update</button>
-            <a href="show.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 mx-4 rounded">Back</a>
+            <a href="index.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 mx-4 rounded">Back</a>
           </div>
         </div>
       </form>
@@ -64,7 +64,9 @@ if(isset($_POST['update'])){
     $query = "update registration set NAME='$name' , EMAIL='$email', MOBILE='$mobile', ROLL='$roll', COURSE='$course' where ROLL= $roll";
      $res = mysqli_query($conn, $query);
         if($res){
-        echo "<p class='text-green-500 text-center m-5'>Record updated successfully</p>";
+          session_start();
+          $_SESSION['updated'] = "updated";
+          header("Location: index.php");
          }else{
         echo "<p class='text-red-500 text-center m-5'>Record not updated</p>";
          }
