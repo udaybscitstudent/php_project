@@ -91,12 +91,10 @@ include 'conn.php';
                     <td class='border border-gray-500 p-3'>
                         <form method="post">
                             <div class="flex flex-row justify-center items-center gap-3">
-                                <label for="present<?php echo $row['ID'];?>">Present</label>
-                                <div class="border w-15 rounded-full">
-                                    <input type='radio' id="present<?php echo $row['ID'];?>" name='attendance[<?php echo $row['ID'];?>]' value='P' <?php echo ($att_row > 0 && $status['ATTENDANCE'] =='P') ? "checked" : ""; ?>> 
-                                    <input type='radio' id="absent<?php echo $row['ID'];?>" name='attendance[<?php echo $row['ID'];?>]' value='A' <?php echo ($att_row > 0 && $status['ATTENDANCE'] =='A') ? "checked" : ""; ?>>
-                                </div>
-                                <label for="absent<?php echo $row['ID'];?>">Absent</label>
+                                <input type='radio' class="peer/present hidden" id="present<?php echo $row['ID'];?>" name='attendance[<?php echo $row['ID'];?>]' value='P' <?php echo ($att_row > 0 && $status['ATTENDANCE'] =='P') ? "checked" : ""; ?>> 
+                                <label for="present<?php echo $row['ID'];?>" class="border px-2.5 py-1 peer-checked/present:bg-green-500 peer-checked/present:text-white transition rounded">Present</label>
+                                <input type='radio' class="peer/absent hidden" id="absent<?php echo $row['ID'];?>" name='attendance[<?php echo $row['ID'];?>]' value='A' <?php echo ($att_row > 0 && $status['ATTENDANCE'] =='A') ? "checked" : ""; ?>>
+                                <label for="absent<?php echo $row['ID'];?>" class="border  px-2.5 py-1 peer-checked/absent:bg-red-500 peer-checked/absent:text-white rounded">Absent</label>
                             </div>
                     </td>
                 </tr>
