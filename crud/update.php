@@ -65,7 +65,7 @@ if(isset($_POST['update'])){
      $res = mysqli_query($conn, $query);
         if($res){
           session_start();
-          $_SESSION['updated'] = "updated";
+          $_SESSION['updated'] = "true";
           header("Location: index.php");
          }else{
         echo "<p class='text-red-500 text-center m-5'>Record not updated</p>";
