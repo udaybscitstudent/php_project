@@ -4,7 +4,7 @@ include 'header.php';
 include 'conn.php';
 ?>
  
-<div class="h-[85vh] bg-white rounded shadow-lg w-[90%] m-auto mt-8 py-5">
+<!-- <div class="h-[85vh] bg-white rounded shadow-lg w-[90%] m-auto mt-8 py-5"> -->
     <select class="border bg-gray-100 appearance-none border-gray-500 rounded-full mb-5 mx-auto block px-3 py-2 w-[50%] outline-gray-500 course">
         <option value="" class="text-center"><?php echo (isset($_GET['course'])) ? " Selected Course : ".$_GET['course'] : "------- Select Course -------"; ?></option>
         <option value="BA">BA</option>
