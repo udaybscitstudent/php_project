@@ -1,6 +1,6 @@
 <?php include 'checklogin.php'; ?>
 <?php include 'header.php'; ?>
-<!-- <div class="h-auto w-[90%] mx-auto my-10 bg-white p-10 rounded shadow-lg"> -->
+<div class="h-auto w-[90%] mx-auto my-10 bg-white p-10 rounded ">
     <form method="post">
         <div>
             <div class="mb-5">
