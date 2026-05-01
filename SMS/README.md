@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio Website
+# 🏫 School Management System
 
 <div align="center">
 
@@ -35,6 +35,8 @@ With an intuitive interface and organized structure, the system enables seamless
 | HTML | Structure |
 | Tailwind CSS | Styling |
 | JavaScript | Interactivity |
+| PHP | Backend |
+| MySql | Database |
 
 ---
 
@@ -71,7 +73,7 @@ The main goal of this portfolio is to **present my technical skills and projects
 
 ## 📸 Preview
 
-<!-- <video src="sms.mp4"> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UmOpIcnjnAs?si=26jyMB4oP_aXwlf1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
