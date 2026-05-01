@@ -73,7 +73,7 @@ The main goal of this portfolio is to **present my technical skills and projects
 
 ## 📸 Preview
 
-<video src="https://www.youtube.com/embed/UmOpIcnjnAs?si=26jyMB4oP_aXwlf1" loop controls autoplay>
+<video src="https://youtu.be/UmOpIcnjnAs?si=4gReSPtuZqhGVCL-" loop controls autoplay>
 
 ---
 
