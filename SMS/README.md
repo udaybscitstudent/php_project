@@ -73,7 +73,11 @@ The main goal of this portfolio is to **present my technical skills and projects
 
 ## 📸 Preview
 
-<video src="https://youtu.be/UmOpIcnjnAs?si=4gReSPtuZqhGVCL-" loop controls autoplay>
+## 🎥 Demo Preview
+
+> Click the image below to watch the full demo
+
+[![School Management System Demo](https://img.youtube.com/vi/UmOpIcnjnAs/0.jpg)](https://youtu.be/UmOpIcnjnAs)
 
 ---
 
